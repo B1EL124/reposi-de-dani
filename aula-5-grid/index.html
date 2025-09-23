@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRID</title>
+    <style>
+        main {
+            margin: 1em;
+            margin-right: 0;
+            max-width: 70em;
+            display: grid;
+            grid-template-rows: 18.5em 18.5em 18.5em;
+            grid-template-columns: 18em 45em 10em 20em 20em;
+            grid-template-areas: 
+                "nav a a b c" 
+                "nav d d d c"
+                "nav e e e c";
+            gap: 1em;    
+        }
+
+        main div {
+            background-color: aliceblue;
+            padding: 2em;
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        div.area-a {
+            grid-area: a; /* atributo para definir a variável da área */
+        }
+
+        div.area-b {
+            grid-area: b;
+        }
+
+        div.area-c {
+            grid-area: c;
+        }
+
+        div.area-d {
+            grid-area: d;
+        }
+
+        div.area-e {
+            grid-area: e;
+        }
+
+        div.area-nav {
+            grid-area: nav;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="area-a"><a href="indice.html">a</a></div>
+        <div class="area-b"><p>b</p></div>
+        <div class="area-c"><p>c</p></div>
+        <div class="area-d"><p>d</p></div>
+        <div class="area-e"><p>e</p></div>
+        <div class="area-nav"><p>nav</p></div>
+    </main>
+</body>
+</html>
