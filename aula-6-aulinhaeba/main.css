@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed; /* segue a rolagem fica mais acima */
+    width: 100vw;
+    top: 0;
+    z-index: 1; /* camada */
+}
+header, footer, section{
+    padding: 2rem;
+    margin: 0 0 2rem 0;
+    background-color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+main{
+    margin-top: 10rem;
+}
+header, footer{
+    background-color: lightskyblue;
+    text-align: center;
+}
+#banner{
+    background-color: lime;
+    width: 20rem;
+    height: 20rem;
+    position: absolute; /* não segue scroll fica acima*/
+    z-index: 3;
+}
+#esmaecer{
+    background-color: rgba(0, 0, 0, 0.7); /* cor e opacidade */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    justify-content: center; /* alinhamento horizontal */
+    align-items: center; /* alinhamento vertical */
+    display: flex;
+}
+#banner h2{
+    position: relative; /* não perde o espaço */ 
+    top: 30px;
+    font-size: 5rem;
+}
