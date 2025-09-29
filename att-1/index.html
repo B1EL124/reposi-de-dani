@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHIFT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+        header{
+            background: linear-gradient(to left,#7292A6, #224459);
+        }
+        header h1{
+            padding: 1em 0 0 1em;
+            color: white;
+        }
+        header p{
+            padding: 0 0 1em 1em;
+            color: white;
+        }
+        main {
+            margin: 1em;
+            margin-right: 0;
+            margin-left: 0;
+            max-width: 70em;
+            display: grid;
+            grid-template-rows: 18.5em 18.5em 18.5em;
+            grid-template-columns: 18em 45em 10em 20em 20em;
+            grid-template-areas: 
+                "nav a b b c" 
+                "nav d e f g"
+                "nav h e i i";
+            gap: 1em;    
+        }
+        main div {
+            padding: 2em;
+        }
+        .area-a, .area-b, .area-c, .area-d, .area-e, .area-f, .area-g, .area-h, .area-i{
+            background-color: rgb(240, 240, 240);
+        }
+        .area-nav{
+            background-color: #c4dbe9;
+        }
+        .area-nav h2{
+            color: #2980B9;
+            margin-bottom: 2em;
+        } 
+        div.area-a {
+            grid-area: a; /* atributo para definir a variável da área */
+        }
+        div.area-b {
+            grid-area: b;
+        }
+        div.area-c {
+            grid-area: c;
+        }
+        div.area-d {
+            grid-area: d;
+        }
+        div.area-e {
+            grid-area: e;
+        }
+        div.area-f {
+            grid-area: f;
+        }
+        div.area-g {
+            grid-area: g;
+        }
+        div.area-h {
+            grid-area: h;
+        }
+        div.area-i {
+            grid-area: i;
+        }
+        div.area-nav {
+            grid-area: nav;
+        }
+        footer{
+            background-color:#224459;
+            text-align: center;
+            padding: 10rem;
+        }
+        footer h4{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SHIFT</h1>
+        <p>1° Encontro de UX no IFRN</p>
+    </header>
+    <main>
+        <div class="area-a">
+            <p>O evento será organizado</p>
+            <p><a href="">Cillum </a>singulus voluptate<br>o te <a href="">enim</a> cillum ad<br>aliquip, <a href="">incididunt</a></p>
+        </div>
+        <div class="area-b"><p>b</p></div>
+        <div class="area-c">
+            <figure>
+                <img src="palestranstes/amanda.jpg" alt="Amanda Freire">
+            </figure>
+        </div>
+        <div class="area-d">
+            <ul>
+                <li>Palestras</li>
+                <li>Workshops</li>
+                <li>Minicursos</li>
+                <li>Estudo de casos</li>
+                <li>Prêmios</li>
+            </ul>
+        </div>
+        <div class="area-e">
+            <form action="">
+                
+            </form>
+        </div>
+        <div class="area-f">
+            <figure>
+                <img src="palestranstes/georgia.jpg" alt="Natalia Lima">
+            </figure>
+        </div>
+        <div class="area-g">
+            <figure>
+                <img src="palestranstes/henrique.jpg" alt="Henrique Almeida">
+            </figure>
+        </div>
+        <div class="area-h">
+            <figure>
+                <img src="palestranstes/ellen.jpg" alt="Larissa Fernandes">
+            </figure>
+        </div>
+        <div class="area-i">
+            <h2>Organização</h2>
+            <p>Professores da DIATINF/CNAT/IFRN:</p>
+            <ul>
+                <li>Profa. Alyana Macêdo</li>
+                <li>Profa. Danielle Freitas</li>
+            </ul>
+        </div>
+        <div class="area-nav">
+            <h2>Inscrições</h2>
+            <h2>Programação</h2>
+            <h2>Palestranstes</h2>
+            <h2>Organização</h2>
+            <h2>Contato</h2>
+        </div>
+    </main>
+    <footer>
+        <h4>Desenvolvido por IFRN.</h4>
+    </footer>
+</body>
+</html>
