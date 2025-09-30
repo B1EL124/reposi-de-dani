@@ -35,10 +35,9 @@
             margin: 1em;
             margin-right: 0;
             margin-left: 0;
-            max-width: 70em;
             display: grid;
-            grid-template-rows: 18.5em 18.5em 18.5em;
-            grid-template-columns: 17em 18em 35em 18em 18em;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
             grid-template-areas: 
                 "nav a b b c" 
                 "nav d e f g"
@@ -52,7 +51,7 @@
             background-color: rgb(221, 221, 221);
         }
         .area-a p{
-            margin: 0.5em 0;
+            margin: 0.7em 0;
         }
         .area-nav{
             background-color: #bfccd4;
@@ -64,6 +63,43 @@
         }
         .area-c, .area-f, .area-g, .area-h{
             padding: 0;
+        }
+        .area-c{
+            background-image: url(palestranstes/amanda.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .area-d li{
+            margin: 0.7em 0 0.7em 1em;
+        }
+        .area-f{
+            background-image: url(palestranstes/georgia.jpg);
+            background-position: initial;
+            background-size: cover;
+        }
+        .area-g{
+            background-image: url(palestranstes/henrique.jpg);
+            background-position: initial;
+            background-size: cover;
+        }
+        .area-h{
+            background-image: url(palestranstes/ellen.jpg);
+            background-position: initial;
+            background-size: cover;
+        }
+        .area-i{
+            padding: 0;
+        }
+        .area-i h2{
+            margin: 1em;
+        }
+        .area-i p{
+            margin-left: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .area-i li{
+            margin-left: 2.7em;
+            margin-bottom: 0.5em;
         }
         div.area-a {
             grid-area: a; /* atributo para definir a variável da área */
@@ -103,14 +139,21 @@
         footer h4{
             color: white;
         }
-    </style>
+        </style>
 </head>
 <body>
     <header>
         <h1>SHIFT</h1>
         <p>1° Encontro de UX no IFRN</p>
     </header>
-    <main> 
+    <main>
+        <div class="area-nav">
+            <h2>Inscrições</h2>
+            <h2>Programação</h2>
+            <h2>Palestrantes</h2>
+            <h2>Organização</h2>
+            <h2>Contato</h2>
+        </div>
         <div class="area-a">
             <p>O evento será organizado</p>
             <p><a href="">Cillum </a>singulus voluptate</p>
@@ -119,11 +162,7 @@
             <a class="ler-mais" href="">Ler mais</a>
         </div>
         <div class="area-b"><p>b</p></div>
-        <div class="area-c">
-            <figure>
-                <img src="palestranstes/amanda.jpg" alt="Amanda Freire">
-            </figure>
-        </div>
+        <div class="area-c"></div>
         <div class="area-d">
             <ul>
                 <li>Palestras</li>
@@ -138,21 +177,9 @@
                 
             </form>
         </div>
-        <div class="area-f">
-            <figure>
-                <img src="palestranstes/georgia.jpg" alt="Natalia Lima">
-            </figure>
-        </div>
-        <div class="area-g">
-            <figure>
-                <img src="palestranstes/henrique.jpg" alt="Henrique Almeida">
-            </figure>
-        </div>
-        <div class="area-h">
-            <figure>
-                <img src="palestranstes/ellen.jpg" alt="Larissa Fernandes">
-            </figure>
-        </div>
+        <div class="area-f"></div>
+        <div class="area-g"></div>
+        <div class="area-h"></div>
         <div class="area-i">
             <h2>Organização</h2>
             <p>Professores da DIATINF/CNAT/IFRN:</p>
@@ -160,13 +187,6 @@
                 <li>Profa. Alyana Macêdo</li>
                 <li>Profa. Danielle Freitas</li>
             </ul>
-        </div>
-        <div class="area-nav">
-            <h2>Inscrições</h2>
-            <h2>Programação</h2>
-            <h2>Palestrantes</h2>
-            <h2>Organização</h2>
-            <h2>Contato</h2>
         </div>
     </main>
     <footer>
