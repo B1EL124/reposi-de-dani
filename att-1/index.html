@@ -38,7 +38,7 @@
             max-width: 70em;
             display: grid;
             grid-template-rows: 18.5em 18.5em 18.5em;
-            grid-template-columns: 18em 45em 10em 20em 20em;
+            grid-template-columns: 17em 18em 35em 18em 18em;
             grid-template-areas: 
                 "nav a b b c" 
                 "nav d e f g"
@@ -49,18 +49,22 @@
             padding: 2em;
         }
         .area-a, .area-b, .area-c, .area-d, .area-e, .area-f, .area-g, .area-h, .area-i{
-            background-color: rgb(240, 240, 240);
+            background-color: rgb(221, 221, 221);
         }
         .area-a p{
             margin: 0.5em 0;
         }
         .area-nav{
-            background-color: #c4dbe9;
+            background-color: #bfccd4;
         }
         .area-nav h2{
-            color: #2980B9;
+            font-size: 2em;
+            color: #608da8;
             margin-bottom: 2em;
-        } 
+        }
+        .area-c, .area-f, .area-g, .area-h{
+            padding: 0;
+        }
         div.area-a {
             grid-area: a; /* atributo para definir a variável da área */
         }
@@ -106,7 +110,7 @@
         <h1>SHIFT</h1>
         <p>1° Encontro de UX no IFRN</p>
     </header>
-    <main>
+    <main> 
         <div class="area-a">
             <p>O evento será organizado</p>
             <p><a href="">Cillum </a>singulus voluptate</p>
@@ -160,7 +164,7 @@
         <div class="area-nav">
             <h2>Inscrições</h2>
             <h2>Programação</h2>
-            <h2>Palestranstes</h2>
+            <h2>Palestrantes</h2>
             <h2>Organização</h2>
             <h2>Contato</h2>
         </div>
