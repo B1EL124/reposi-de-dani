@@ -37,9 +37,9 @@
             margin-left: 0;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
-            grid-template-areas: 
-                "nav a b b c" 
+            grid-template-columns: 0.8fr 0.7fr 1.2fr 0.7fr 0.7fr;
+            grid-template-areas:
+                "nav a b b c"
                 "nav d e f g"
                 "nav h e i i";
             gap: 1em;    
@@ -51,7 +51,7 @@
             background-color: rgb(221, 221, 221);
         }
         .area-a p{
-            margin: 0.7em 0;
+            margin: 0.7em 0 0.7em 0;
         }
         .area-nav{
             background-color: #bfccd4;
@@ -161,7 +161,7 @@
             <p>aliquip, <a href="">incididunt.</a></p>
             <a class="ler-mais" href="">Ler mais</a>
         </div>
-        <div class="area-b"><p>b</p></div>
+        <div class="area-b"><h2>Programação</h2></div>
         <div class="area-c"></div>
         <div class="area-d">
             <ul>
@@ -173,8 +173,14 @@
             </ul>
         </div>
         <div class="area-e">
-            <form action="">
-                
+            <h2>Inscrição</h2>
+            <form action="" method="get">
+                <input type="text" name="" id="">
+                <input type="email" value="">
+                <input type="number" name="" id="">
+                <input type="checkbox" name="" id="aluno">
+                <label for="aluno">Aluno do IF</label>
+                <input type="submit" value="Enviar">
             </form>
         </div>
         <div class="area-f"></div>
