@@ -63,29 +63,34 @@
         }
         .area-c, .area-f, .area-g, .area-h{
             padding: 0;
+            background-position: initial;
+            background-size: cover;
         }
         .area-c{
             background-image: url(palestranstes/amanda.jpg);
-            background-position: center;
-            background-size: cover;
         }
         .area-d li{
             margin: 0.7em 0 0.7em 1em;
         }
+        #nome, #email, #celular{
+            border: 2px solid gray;
+            padding: 0.8em 8em 0.8em 1em;
+            margin: 1em;
+        }
+        #enviar{
+            border: 0;
+            color: rgb(112, 112, 112);
+            padding: 0.8em 4rem;
+            background-color: rgb(0, 0, 0);
+        }
         .area-f{
             background-image: url(palestranstes/georgia.jpg);
-            background-position: initial;
-            background-size: cover;
         }
         .area-g{
             background-image: url(palestranstes/henrique.jpg);
-            background-position: initial;
-            background-size: cover;
         }
         .area-h{
             background-image: url(palestranstes/ellen.jpg);
-            background-position: initial;
-            background-size: cover;
         }
         .area-i{
             padding: 0;
@@ -161,7 +166,18 @@
             <p>aliquip, <a href="">incididunt.</a></p>
             <a class="ler-mais" href="">Ler mais</a>
         </div>
-        <div class="area-b"><h2>Programação</h2></div>
+        <div class="area-b">
+            <h2>Programação</h2>
+            <table border="1">
+                <tr>
+                    <td></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+        </div>
         <div class="area-c"></div>
         <div class="area-d">
             <ul>
@@ -175,12 +191,12 @@
         <div class="area-e">
             <h2>Inscrição</h2>
             <form action="" method="get">
-                <input type="text" name="" id="">
-                <input type="email" value="">
-                <input type="number" name="" id="">
+                <input type="text" name="" id="nome" placeholder="Nome">
+                <input type="email" value="" id="email" placeholder="E-mail">
+                <input type="text" name="" id="celular" placeholder="Celular">
                 <input type="checkbox" name="" id="aluno">
                 <label for="aluno">Aluno do IF</label>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" id="enviar">
             </form>
         </div>
         <div class="area-f"></div>
