@@ -16,6 +16,7 @@
             color: #2980B9;
         }
         .ler-mais{
+            display: inline-block;
             padding: 0 0.3em;
             margin: 0.5em;
             border: 1px solid #2980B9;
@@ -54,12 +55,22 @@
             margin: 0.7em 0 0.7em 0;
         }
         .area-nav{
+            padding: 0;
             background-color: #bfccd4;
         }
-        .area-nav h2{
+        .area-nav a{
+            display: block;
             font-size: 2em;
             color: #608da8;
-            margin-bottom: 2em;
+            padding: 1em;
+        }
+        table{
+            border-collapse: collapse;
+            align-self: center;
+        }
+        th, td{
+            padding: 0em 2em;
+            border: 2px solid rgb(255, 255, 255);
         }
         .area-c, .area-f, .area-g, .area-h{
             padding: 0;
@@ -153,29 +164,40 @@
     </header>
     <main>
         <div class="area-nav">
-            <h2>Inscrições</h2>
-            <h2>Programação</h2>
-            <h2>Palestrantes</h2>
-            <h2>Organização</h2>
-            <h2>Contato</h2>
+            <a href="index.html">Inscrições</a>
+            <a href="index.html">Programação</a>
+            <a href="index.html">Palestranstes</a>
+            <a href="index.html">Organização</a>
+            <a href="index.html">Contato</a>
         </div>
         <div class="area-a">
             <p>O evento será organizado</p>
-            <p><a href="">Cillum </a>singulus voluptate</p>
-            <p>o te <a href="">enim</a> cillum ad</p>
-            <p>aliquip, <a href="">incididunt.</a></p>
+            <p>Cillum singulus voluptate</p>
+            <p>o te enim cillum ad</p>
+            <p>aliquip, incididunt.</p>
             <a class="ler-mais" href="">Ler mais</a>
         </div>
         <div class="area-b">
             <h2>Programação</h2>
             <table border="1">
                 <tr>
-                    <td></td>
+                    <td rowspan="2">Dia<br>03/06</td>
+                    <td>08:00</td>
+                    <td>Abertura</td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Sorteios</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Dia<br>04/06</td>
+                    <td>08:00</td>
+                    <td>Palestra de<br>Andrei Gurgel</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Sorteios</td>
+                </tr>
             </table>
         </div>
         <div class="area-c"></div>
