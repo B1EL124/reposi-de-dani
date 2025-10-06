@@ -38,7 +38,7 @@
             margin-left: 0;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 0.5fr 0.5fr 1.0fr 0.5fr 0.5fr;
+            grid-template-columns: 0.5fr 0.5fr 0.6fr 0.5fr 0.5fr;
             grid-template-areas:
                 "nav a b b c"
                 "nav d e f g"
@@ -64,17 +64,23 @@
             color: #608da8;
             padding: 1em;
         }
+        #tabelinha{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         table{
             border-collapse: collapse;
         }
         th, td{
-            padding: 0em 2em;
+            padding: 0em 4em;
             border: 2px solid rgb(255, 255, 255);
         }
         .area-c, .area-f, .area-g, .area-h{
             padding: 0;
             background-position: initial;
             background-size: cover;
+            filter: grayscale(100%);
         }
         .area-c{
             background-image: url(palestranstes/amanda.jpg);
@@ -82,16 +88,24 @@
         .area-d li{
             margin: 0.7em 0 0.7em 1em;
         }
-        #nome, #email, #celular{
+        #formulinha{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nome, #email, #celular, #aluno{
             border: 2px solid gray;
-            padding: 0.8em 8em 0.8em 1em;
-            margin: 1em;
+            padding: 0.8em 14em 0.8em 1em;
+            margin: 1em 0;
         }
         #enviar{
             border: 0;
             color: rgb(112, 112, 112);
             padding: 0.8em 4rem;
             background-color: rgb(0, 0, 0);
+            margin: 1em;
+            margin-left: 7em;
         }
         .area-f{
             background-image: url(palestranstes/georgia.jpg);
@@ -178,28 +192,32 @@
         </div>
         <div class="area-b">
             <h2>Programação</h2>
-            <table border="1">
-                <tr>
-                    <td rowspan="2">Dia<br>03/06</td>
-                    <td>08:00</td>
-                    <td>Abertura</td>
-                </tr>
-                <tr>
-                    <td>11:00</td>
-                    <td>Sorteios</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Dia<br>04/06</td>
-                    <td>08:00</td>
-                    <td>Palestra de<br>Andrei Gurgel</td>
-                </tr>
-                <tr>
-                    <td>11:00</td>
-                    <td>Sorteios</td>
-                </tr>
-            </table>
+            <div id="tabelinha">
+                <table border="1">
+                    <tr>
+                        <td rowspan="2">Dia<br>03/06</td>
+                        <td>08:00</td>
+                        <td>Abertura</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Sorteios</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Dia<br>04/06</td>
+                        <td>08:00</td>
+                        <td>Palestra de<br>Andrei Gurgel</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Sorteios</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="area-c"></div>
+        <div class="area-c">
+            <h2>Amanda Freitas</h2>
+        </div>
         <div class="area-d">
             <ul>
                 <li>Palestras</li>
@@ -211,14 +229,16 @@
         </div>
         <div class="area-e">
             <h2>Inscrição</h2>
-            <form action="" method="get">
-                <input type="text" name="" id="nome" placeholder="Nome">
-                <input type="email" value="" id="email" placeholder="E-mail">
-                <input type="text" name="" id="celular" placeholder="Celular">
-                <input type="checkbox" name="" id="aluno">
-                <label for="aluno">Aluno do IF</label>
-                <input type="submit" value="Enviar" id="enviar">
-            </form>
+            <div id="formulinha">
+                <form action="" method="get">
+                    <input type="text" name="" id="nome" placeholder="Nome">
+                    <input type="email" value="" id="email" placeholder="E-mail">
+                    <input type="text" name="" id="celular" placeholder="Celular"> <br>
+                    <input type="checkbox" name="" id="aluno">
+                    <label for="aluno">Aluno do IF</label> <br>
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
+            </div>
         </div>
         <div class="area-f"></div>
         <div class="area-g"></div>
