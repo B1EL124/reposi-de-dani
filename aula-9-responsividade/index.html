@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- a viewport auxilia na imagem -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Halloween CNAT 2025</h1>
+    </header>
+<div id="destaque">
+    <!--
+        1- picture tag para responsividade de imgs
+        2- marcação de source maiores em cima - podem ter varias marcações de source
+        3- pode ser colocado em h1, lista...
+        4- a largura precisa estar relacionada com a largura da "imagem"
+    -->
+    <picture>
+        <source srcset="images/destaque-versao-web.jpg" media="(min-width:1440px)" />
+        <source srcset="images/destaque-versao-tablet.jpg" media="(min-width:744px)" />
+        <img src="images/destaque-versao-mobile.jpg" alt="Imagem de destaque ...">
+    </picture>
+</div>
+    <main>
+        <section>
+            <h2>Organizadores</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestiae a nostrum! Nihil magni beatae rerum qui ex consequatur explicabo, hic illum laborum aliquid. Alias dicta enim architecto rerum provident!</p>
+        </section>
+        <section>
+            <h2>Programação</h2>
+            <p>Aspernatur nemo quos adipisci minima omnis quasi, illum magni modi eum dolore harum nulla dignissimos. Voluptatem accusantium consequuntur dolor. Vel quaerat inventore autem commodi, pariatur nulla dicta quisquam molestias sed.</p>
+        </section>
+        <section>
+            <h2>Praça de alimentação</h2>
+            <p>Minus repellat vitae ullam dolorem assumenda facilis quasi accusamus repudiandae provident enim, aperiam nisi. Non exercitationem eligendi neque recusandae modi reprehenderit, sint, tempore repellat, consectetur voluptates cum temporibus accusantium molestiae!</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Magnam, iusto. Non minus aspernatur ad explicabo harum ullam illum laborum? Magni, libero hic, quod voluptatibus odit provident sint est similique qui expedita ratione? Odio pariatur ducimus ipsum. Ab, veniam.</p>
+        </section>
+    </main>
+</body>
+</html>

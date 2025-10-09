@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    /* este atributo não altera largura ao se colocar o padding */
+}
+main{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* serve para quebrar as linhas, colocando cada elemento abaixo do outro */
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 20%;
+}
+/* responsivvidade com mediascreen: */
+@media (max-width: 1440px){
+    body{
+        background-color: burlywood;
+    }
+    section{
+        flex-basis: 45%;
+    }
+}
+@media (max-width: 744px){
+    body{
+        background-color: rgb(38, 231, 183);
+    }
+    section{
+        flex-basis: 90%;
+    }
+}
