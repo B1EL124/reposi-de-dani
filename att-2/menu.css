@@ -6,13 +6,18 @@ body{
     background-color: gray;
 }
 header{
-    margin: 20px;
+    background-color: brown;
+    padding : 20px 8rem;
 }
 main{
-    margin-left: 10px;
+    margin-left: 2rem;
 }
 h1{
     justify-content: center;
+}
+a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
 }
 section a{
     display: block;
@@ -23,7 +28,7 @@ section a{
 section{
     margin: 5px;
     width: 20rem;
-    background-color: aqua;
+    background-color: wheat;
     border: 1px solid black;
     box-sizing: border-box;
     transition-property: border-radius, box-shadow;
