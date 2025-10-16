@@ -1,0 +1,13 @@
+body{
+    background-color: aqua !important;
+    background-color: blueviolet;
+}
+main{
+    display: flex;
+    gap: 2rem
+}
+section{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+}
