@@ -1,18 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: aqua !important; 
-    /* aumenta a importancia */
-    background-color: blueviolet;
+    background-color: gray;
+}
+header{
+    margin: 20px;
 }
 main{
-    display: flex;
-    gap: 2rem;
+    margin-left: 10px;
+}
+h1{
     justify-content: center;
 }
+section a{
+    display: block;
+    font-size: 1em;
+    color: #608da8;
+    padding: 2em;       
+}
 section{
+    margin: 5px;
     width: 20rem;
-    height: 20rem;
+    background-color: aqua;
     border: 1px solid black;
-    padding: 2rem;
     box-sizing: border-box;
     transition-property: border-radius, box-shadow;
     /* 
@@ -24,6 +36,7 @@ section{
     /* duração da transição em s ou ms */
     /* transition-behaviior: */
 }section:hover{
+    box-decoration-break: slice;
     box-shadow: 0 0 10px 0 gray;
     border-radius: 10px;
 }
