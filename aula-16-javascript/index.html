@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - introdução</title>
+</head>
+<body>
+    <script>
+        /*
+        - javascript não é java (linguagem de programação ladi servidor)
+        - javascript é linguagem de programação de lado cliente, geralmente
+        - javascript é interpretada (diferente de executada)
+        - javascript é sensível à capitulação 
+        - o desenvolvimento web é um tripé:
+            - html é uma estrutura, conteúdo
+            - css é o estilo
+            - javascript é a interatividade, cpomportamento...
+        - pode ser: lado cliente, servidor, mobile e desktop
+        */
+
+    window.alert("Hello world!");
+    document.write("<p>Olá mundo com document write.<p>");
+    document.getElementById("mensagem").innerHTML = "Olá mundo com getElementById"
+
+    console.log(4==7);
+    console.log(4!=7);
+    console.log(4<=7);
+    console.log(4>=7);
+    console.log(4==4 && 5<=2); // SE AMBOS FOREM V
+    console.log(4==4 || 10>5); // SE UM FOR V
+    console.log("COMO FUNCINA: ===");
+    console.log("3" === 3);
+
+    let nome = window.prompt("Qual seu nome?")
+    document.write(nome);
+
+    if(nome == 'Dani'){
+        alert("Oi Dani");
+    }else{
+        alert("Você não é Dani!");
+    }
+
+    </script>
+</body>
+</html>
