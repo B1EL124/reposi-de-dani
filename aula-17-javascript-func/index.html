@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ad reiciendis, incidunt exercitationem blanditiis repellat eligendi. Dignissimos omnis nobis ab, itaque velit vitae doloremque, alias molestias reiciendis, nemo debitis neque?</p>
+
+    <input type="color" id="cor">
+    <input type="number" id="aumenta">
+    <button onclick="mudarcor()">BUTTON atributo onclick</button>
+    <!-- evento dentro da tag não é indicado porque mistura html com js -->
+    <button id="btn2">BUTTON com eventListener</button>
+    <button id="tamanho">BUTTON pra aumentar tamanho</button>
+
+    <script>
+        function mudarcor(){
+            let cor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = cor;
+        }
+
+        btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", function(){
+            let cor = document.getElementById("cor").value;
+            // "value" pega o valor
+            document.getElementById("texto").style.color = cor
+        })
+
+        tamanho = document.getElementById("tamanho")
+        tamanho.addEventListener("click", function(){
+            let aumenta = document.getElementById("aumenta").value;
+            document.getElementById("texto").style.fontSize = aumenta+"rem";
+        })
+        
+        function somar(){
+            return 1+3*9-2;
+        }
+        console.log(somar());
+
+        function somar2(num1,num2){
+            return num1+num2;
+        }
+        console.log(somar2(5,7));
+
+        function somar3(num1,num2,num3){
+            return num1+num2+num3;
+        }
+        console.log(somar3(5,4,7));
+
+        function somar4(num1=2,num2=0){
+            return num1+num2;
+        }
+        console.log(somar4(7));
+
+        function somar5(num1,num2){
+            if(!isNaN(num1) && !isNaN(num2) ){
+                // isNaN - não é número
+                // só entra no if se ambos forem números
+                return num1+num2;
+            }else
+                return "Passar um número.";
+        }
+        console.log(somar5(5,"aaa"));
+        console.log(somar5(5,7));
+
+        function borda(cor, espessura){
+            document.body.style.borderColor = cor;
+            document.body.style.borderWidth = espessura+'rem';
+            document.body.style.borderStyle = "solid";
+        }
+        borda('blue', 3)
+
+
+    </script>
+</body>
+</html>
