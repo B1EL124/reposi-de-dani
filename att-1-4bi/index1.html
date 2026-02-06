@@ -11,41 +11,15 @@
     <button id="tamanho">BUTTON pra aumentar tamanho</button>
 
     <script>
-        
-        let tamanho1 = 1;
-        let tamanho2 = 2;
-        let tamanho3 = 3;
-        let tamanho4 = 4;
-        let tamanho5 = 5;
 
-        tamanho.addEventListener("click", function(){
-            const textoo = document.getElementById("texto").value;
+        tamanho.addEventListener("click", function () {
+            const texto = document.getElementById("texto").value;
 
-            let t1 = document.createElement("p");
-            p1.innerText = textoDigitado;
-            p1.style.fontSize = tamanho1 + "rem";
-
-            let p2 = document.createElement("p");
-            p2.innerText = textoDigitado;
-            p2.style.fontSize = tamanho2 + "rem";
-
-            let p3 = document.createElement("p");
-            p3.innerText = textoDigitado;
-            p3.style.fontSize = tamanho3 + "rem";
-
-            let p4 = document.createElement("p");
-            p4.innerText = textoDigitado;
-            p4.style.fontSize = tamanho4 + "rem";
-
-            let p5 = document.createElement("p");
-            p5.innerText = textoDigitado;
-            p5.style.fontSize = tamanho5 + "rem";
-
-            document.body.appendChild(p1);
-            document.body.appendChild(p2);
-            document.body.appendChild(p3);
-            document.body.appendChild(p4);
-            document.body.appendChild(p5);
+            document.write("<p style='font-size:1rem'>" + texto + "</p>");
+            document.write("<p style='font-size:2rem'>" + texto + "</p>");
+            document.write("<p style='font-size:3rem'>" + texto + "</p>");
+            document.write("<p style='font-size:4rem'>" + texto + "</p>");
+            document.write("<p style='font-size:5rem'>" + texto + "</p>");
         });
         
     </script>
