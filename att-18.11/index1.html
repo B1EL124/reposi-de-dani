@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões de cor</title>
+    <style>
+        button{
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid white;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function fundo(r,g,b){
+            document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")"                
+        }
+        function bola(){
+            let r = Math.floor(Math.random() * 255)
+            let g = Math.floor(Math.random() * 255)
+            let b = Math.floor(Math.random() * 255)
+            document.write(`<button onclick="fundo(${r}, ${g}, ${b})"style="background-color: rgb(${r}, ${g}, ${b});"></button>`)
+            }
+            for(i=0; i<100; i++){
+                bola();
+            }
+    </script>
+</body>
+</html>
