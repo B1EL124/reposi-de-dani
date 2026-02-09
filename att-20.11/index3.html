@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar e remover</title>
+    <title>Adicionar e subtrair</title>
+    <style>
+        button{
+            padding: 2rem;
+        }
+    </style>
 </head>
 <body>
     
-    <button id="diminui">-</button>
+    <button id="diminui" onclick="diminuir">-</button>
     <Label id="numero">0</Label>   
     <button id="aumenta">+</button>
 
+    
     <script>
-        
+        let numero = 0
+        function diminuir(){
+            numero =  numero - 1
+            document.getElementById("numero").innerText = (numero)
+        }
+        function aumentar(){
+            numero = numero + 1
+            document.getElementById("numero").innerText = (numero)
+        }
 
 
     </script>
-
-
 </body>
 </html>

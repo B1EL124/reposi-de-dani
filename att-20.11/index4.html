@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piscar palavra</title>
+</head>
+<body>
+    <h1>Muda cor</h1>
+
+
+    <script>
+        function colorir(){
+            let r = Math.random()*255
+            let g = Math.random()*255
+            let b = Math.random()*255
+            document.body.style.color = `rgb(${r}, ${g}, ${b})`
+        }
+        document.addEventListener("DOMContentLoaded", colorir)
+    </script>
+
+
+</body>
+</html>
