@@ -3,17 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de login</title>
+    <title>Login page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: rgb(217 221 240);
+        }
+        form{
+            background-color: rgb(154 162 199);
+        }
+        #username{
+            padding-left: 35px;
+            background-image: url(imagens/botao-perfil.png);
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 20px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+        #password{
+            padding-left: 35px;
+            background-image: url(imagens/botao-lock.png);
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 20px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+        fieldset{
+            position: relative;
+            padding-top: 6rem;
+            border: none;
+        }
+        legend{
+            position: absolute;
+            top: 5%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0;
+            margin: 1rem;
+        }
+        a{
+            display: block;
+            color: azure;
+            text-decoration: none;
+            padding: 12px 24px;
+        }
+        button{
+            background-color: rgb(0, 0, 0);
+            border-style: unset;
+            border-radius: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Projeto<img src="imagens/botao-y.png" alt=""></h1>
+    <h1>Project<img src="imagens/botao-y.png" alt=""></h1>
     <form action="/submit" method="get">
         <fieldset>
-            <input type="text" name="nome" placeholder="Nome de usuário..." id="">
-            <input type="password" name="senha" placeholder="Senha..." id="">
+            <legend>Login into your account</legend>
+            <input type="text" name="nome" id="username" placeholder="Username..." id=""><br>
+            <input type="password" name="senha" id="password" placeholder="Password..." id=""><br>
             <input type="checkbox" name="lembrar" id="">
-            <label for="lembrar">Lembrar de mim</label>
-            <button type="submit"><a href="inicio.html">Enviar</a></button>
+            <label for="lembrar">Remember me</label>
+            <button type="submit"><a href="inicio.html">Login</a></button>
         </fieldset>
     </form>
 </body>
