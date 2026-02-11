@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import CounterCard from '@/components/CounterCard.vue'
 
 const count = ref(0)
 
@@ -10,12 +11,12 @@ function incrementar() {
 
 <template>
   <div style="padding: 40px">
-    <h1>Projeto Vue 3 - Aula Prática</h1>
+    <h1>Projeto Vue 3 - Componentes</h1>
     
-    <p>Contador: {{ count }}</p>
-    
-    <button @click="incrementar">
-      Incrementar
-    </button>
+    <CounterCard
+      title="Meu contador"
+      :count="count"
+      @increment="incrementar"
+    />
   </div>
 </template>
